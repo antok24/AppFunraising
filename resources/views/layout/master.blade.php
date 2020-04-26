@@ -46,7 +46,7 @@
 		<section class="body">
 
 			<!-- start: header -->
-			@include(layout.header)
+			@include('layout.header')
 			<!-- end: header -->
 
 			<div class="inner-wrapper">
