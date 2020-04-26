@@ -71,7 +71,7 @@
         <div class="flex-center position-ref full-height">
             <div class="content">
                 <div class="title m-b-md">
-                    SELAMAT DATANG DI APP FUNRAISING
+                    WELCOME TO APP FUNRAISING
                 </div>
                     <table style="width:100%">
                     <thead>
