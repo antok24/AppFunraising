@@ -1,2 +1,0 @@
-# AppFunraising
-project merantau
