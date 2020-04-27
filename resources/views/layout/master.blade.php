@@ -5,7 +5,7 @@
 		<!-- Basic -->
 		<meta charset="UTF-8">
 
-		<title>Default Layout | Porto Admin - Responsive HTML5 Template 1.7.0</title>
+		<title>APP Funraising</title>
 		<meta name="keywords" content="HTML5 Admin Template" />
 		<meta name="description" content="Porto Admin - Responsive HTML5 Template">
 		<meta name="author" content="okler.net">
@@ -46,12 +46,13 @@
 		<section class="body">
 		@include('layout.header')
 
-		<div class="inner-wrapper">
-			@include('layout.menu')
+			<div class="inner-wrapper">
+				@include('layout.menu')
 
-			@yield('layout.main')
-		</div>
+				@yield('content')
+			</div>
 		</section>
+
 		<!-- Vendor -->
 		<script src="assets/vendor/jquery/jquery.js"></script>
 		<script src="assets/vendor/jquery-browser-mobile/jquery.browser.mobile.js"></script>
