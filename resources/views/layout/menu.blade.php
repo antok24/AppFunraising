@@ -62,6 +62,12 @@
 				                            </li>
 				                        </ul>
 				                    </li>
+									<li>
+				                        <a href="layouts-default.html">
+				                            <i class="fa fa-barcode" aria-hidden="true"></i>
+				                            <span>Transaksi</span>
+				                        </a>                        
+				                    </li>
 				                </ul>
 				            </nav>
 						</div>
