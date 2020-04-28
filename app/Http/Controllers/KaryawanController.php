@@ -9,8 +9,8 @@ use App\Karyawan;
 class KaryawanController extends Controller
 {
     public function tampildata() {
-        $query = DB::SELECT("select * from karyawan where status='1'");
-
-        return view('karyawan.input', ['data' => $query]);
+        $query = DB::SELECT("SELECT * from karyawan");
+        //$query = Karyawan::all();
+        return view('karyawan.tabel', ['data' => $query]);
     }
 }

@@ -34,7 +34,7 @@
 				                                </a>
 				                                <ul class="nav nav-children">
 				                                    <li>
-				                                        <a href="layouts-boxed.html">
+				                                        <a href="karyawan">
 				                                            Karyawan
 				                                        </a>
 				                                    </li>
