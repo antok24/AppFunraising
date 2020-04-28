@@ -25,7 +25,7 @@
 					
 					<header class="panel-heading">
 					<div class="col-md-3">
-							<a class="btn btn-primary"><i class="fa fa-plus"></i> Tambah Data</a>
+							<a class="btn btn-primary" href="{{route('karyawan.create')}}"><i class="fa fa-plus"></i> Tambah Data</a>
 					</div>
 							<div class="col-md-offset-9">
 								<a href="#" class=" btn btn-danger btn-sm"><i class="fa fa-print"></i> Print</a>

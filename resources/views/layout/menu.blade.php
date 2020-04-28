@@ -34,7 +34,7 @@
 				                                </a>
 				                                <ul class="nav nav-children">
 				                                    <li>
-				                                        <a href="karyawan">
+				                                        <a href="{{route('karyawan.index')}}">
 				                                            Karyawan
 				                                        </a>
 				                                    </li>
