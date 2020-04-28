@@ -1,7 +1,7 @@
 @extends('layout.master')
 
 @section('content')
-            <section role="main" class="content-body">
+            <section class="content-body">
 					<header class="page-header">
 						<h2>Tambah Data Karyawan</h2>
 					
@@ -15,7 +15,6 @@
 								<li><span>Data</span></li>
 								<li><span>Karyawan</span></li>
 							</ol>
-					
 							<a class="sidebar-right-toggle" data-open="sidebar-right"><i class="fa fa-chevron-left"></i></a>
 						</div>
                     </header>

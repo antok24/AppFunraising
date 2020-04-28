@@ -1,5 +1,5 @@
 <!-- start: sidebar -->
-<aside id="sidebar-left" class="sidebar-left">
+			<aside id="sidebar-left" class="sidebar-left">
 				
                 <div class="sidebar-header">
                     <div class="sidebar-title">
@@ -62,47 +62,8 @@
 				                            </li>
 				                        </ul>
 				                    </li>
-									<li>
-				                        <a href="#">
-				                            <i class="fa fa-external-link" aria-hidden="true"></i>
-				                            <span>Logout<em class="not-included">(Not Included)</em></span>
-				                        </a>                        
-				                    </li>
 				                </ul>
 				            </nav>
-				
-				            <hr class="separator" />
-				
-				        </div>
-				
-				        <script>
-				            // Maintain Scroll Position
-				            if (typeof localStorage !== 'undefined') {
-				                if (localStorage.getItem('sidebar-left-position') !== null) {
-				                    var initialPosition = localStorage.getItem('sidebar-left-position'),
-				                        sidebarLeft = document.querySelector('#sidebar-left .nano-content');
-				                    
-				                    sidebarLeft.scrollTop = initialPosition;
-				                }
-				            }
-				        </script>
-				        
-				
-				    </div>
-            
-                    <script>
-                        // Maintain Scroll Position
-                        if (typeof localStorage !== 'undefined') {
-                            if (localStorage.getItem('sidebar-left-position') !== null) {
-                                var initialPosition = localStorage.getItem('sidebar-left-position'),
-                                    sidebarLeft = document.querySelector('#sidebar-left .nano-content');
-                                
-                                sidebarLeft.scrollTop = initialPosition;
-                            }
-                        }
-                    </script>
-                    
-            
-                </div>
-            
-            </aside>
+						</div>
+				</div>
+			</aside>
