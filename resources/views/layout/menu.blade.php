@@ -20,12 +20,43 @@
 				                            <i class="fa fa-home" aria-hidden="true"></i>
 				                            <span>Dashboard</span>
 				                        </a>                        
-				                    </li>
-				                    <li class="nav-parent nav-expanded nav-active">
+									</li>
+									
+				                    <li class="nav-parent">
 				                        <a href="#">
 				                            <i class="fa fa-columns" aria-hidden="true"></i>
 				                            <span>Daftar Referensi Umum</span>
-				                        </a>
+										</a>
+										 <ul class="nav nav-children">
+	
+				                            <li class="nav-parent">
+				                                <a>
+				                                    Referensi Sistem
+				                                </a>
+				                                <ul class="nav nav-children">
+				                                    <li>
+				                                        <a href="#">
+				                                            Fasilitas Manajemen Group User
+				                                        </a>
+				                                    </li>
+				                                    <li>
+				                                        <a href="#">
+				                                            Fasilitas Manajemen Users
+				                                        </a>
+				                                    </li>
+													<li>
+				                                        <a href="#">
+				                                            Fasilitas Manajemen Menu
+				                                        </a>
+				                                    </li>
+													<li>
+				                                        <a href="#">
+				                                           Fasilitas Mananjemen Hak Akses Menu
+				                                        </a>
+				                                    </li>
+				                                </ul>
+				                            </li>
+				                        </ul>
 				                        <ul class="nav nav-children">
 	
 				                            <li class="nav-parent">
