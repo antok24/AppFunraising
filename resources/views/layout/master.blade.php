@@ -114,7 +114,7 @@
 		<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
 		<script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
 		<script src="https://cdn.datatables.net/buttons/1.6.1/js/dataTables.buttons.min.js"></script>
-		<script src="https://cdn.datatables.net/buttons/1.6.1/js/buttons.flash.min.js"></script>
+		<!-- <script src="https://cdn.datatables.net/buttons/1.6.1/js/buttons.flash.min.js"></script> -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
@@ -143,34 +143,17 @@
 					//},
 					'copy', 'csv', 'excel', 'print'
 				]
+				// ,
+				// columnDefs: [
+				// 	{
+				// 		"searchable": false,
+				// 		"orderable": false,
+				// 		"target": 8
+				// 	}
+				// ]
 			} );
 		} );
-		$(document).ready(function() {
-			$('#coba').DataTable({
-				//"processing": true,
-				//"serverSide": true,
-				//"ajax": "test.php",
-				//scrollY: "250px",
-				//dom: "Bfrtip",
-				button:[
-					{
-						extend: 'pdf',
-						oriented: 'potrait',
-						pageSize: 'Legal',
-						title: 'Data Karyawan',
-						download: 'open'
-					},
-					'csv','exel','print','copy'
-				],
-				columnDefs: [
-					{
-						"searchable": false,
-						"orderable": false,
-						"target": 8
-					}
-				]
-			});
-		});
+		
 		</script>
 	</body>
 </html>
