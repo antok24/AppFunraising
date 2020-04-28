@@ -84,16 +84,93 @@
 		
 		
 		<!-- Theme Base, Components and Settings -->
-		<script src="assets/javascripts/theme.js"></script>
+		<!-- <script src="assets/javascripts/theme.js"></script> -->
 		
 		<!-- Theme Custom -->
-		<script src="assets/javascripts/theme.custom.js"></script>
+		<!-- <script src="assets/javascripts/theme.custom.js"></script> -->
 		
 		<!-- Theme Initialization Files -->
-		<script src="assets/javascripts/theme.init.js"></script>
+		<!-- <script src="assets/javascripts/theme.init.js"></script> -->
 
 		<!-- Examples -->
 		<script src="assets/javascripts/dashboard/examples.dashboard.js"></script>
 
+		<!-- Vendor Tabel Gaes -->
+		<!-- <script src="assets/vendor/select2/js/select2.js"></script>
+		<script src="assets/vendor/jquery-datatables/media/js/jquery.dataTables.js"></script>
+		<script src="assets/vendor/jquery-datatables/extras/TableTools/js/dataTables.tableTools.min.js"></script>
+		<script src="assets/vendor/jquery-datatables-bs3/assets/js/datatables.js"></script>
+
+		<script src="assets/javascripts/tables/examples.datatables.default.js"></script>
+		<script src="assets/javascripts/tables/examples.datatables.row.with.details.js"></script>
+		<script src="assets/javascripts/tables/examples.datatables.tabletools.js"></script>
+
+		<script type="text/javascript" src="vendor/tableExport/libs/FileSaver/FileSaver.min.js"></script>
+		<script type="text/javascript" src="vendor/tableExport/libs/js-xlsx/xlsx.core.min.js"></script>
+		<script type="text/javascript" src="vendor/tableExport/libs/jsPDF/jspdf.min.js"></script>
+		<script type="text/javascript" src="vendor/tableExport/libs/jsPDF-AutoTable/jspdf.plugin.autotable.js"></script>
+		<script type="text/javascript" src="vendor/tableExport/tableExport.min.js"></script> -->
+
+		<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+		<script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+		<script src="https://cdn.datatables.net/buttons/1.6.1/js/dataTables.buttons.min.js"></script>
+		<script src="https://cdn.datatables.net/buttons/1.6.1/js/buttons.flash.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+		<script src="https://cdn.datatables.net/buttons/1.6.1/js/buttons.html5.min.js"></script>
+		<script src="https://cdn.datatables.net/buttons/1.6.1/js/buttons.print.min.js"></script>
+
+		<script type="text/javascript">
+		$(document).ready(function() {
+			$('#karyawan').DataTable();
+		} );
+		$(document).ready(function() {
+			$('#example').DataTable( {
+				dom: 'Bfrtip',
+				buttons: [
+					{
+						extend: 'pdf',
+						oriented: 'potrait',
+						pageSize: 'A4',
+						title: 'Data Karyawan',
+						download: 'open'
+					},
+					//{
+					//	extend: 'excel',
+					//	mso: {fileFormat:'xmlss',
+                   //           worksheetName: ['Table 1','Table 2', 'Table 3']}
+					//},
+					'copy', 'csv', 'excel', 'print'
+				]
+			} );
+		} );
+		$(document).ready(function() {
+			$('#coba').DataTable({
+				//"processing": true,
+				//"serverSide": true,
+				//"ajax": "test.php",
+				//scrollY: "250px",
+				//dom: "Bfrtip",
+				button:[
+					{
+						extend: 'pdf',
+						oriented: 'potrait',
+						pageSize: 'Legal',
+						title: 'Data Karyawan',
+						download: 'open'
+					},
+					'csv','exel','print','copy'
+				],
+				columnDefs: [
+					{
+						"searchable": false,
+						"orderable": false,
+						"target": 8
+					}
+				]
+			});
+		});
+		</script>
 	</body>
 </html>
