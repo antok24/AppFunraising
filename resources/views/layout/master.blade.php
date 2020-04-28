@@ -45,12 +45,14 @@
 	<body>
 		<section class="body">
 		@include('layout.header')
-
+		
+		@include('layout.main')	
 			<div class="inner-wrapper">
 				@include('layout.menu')
-
 				@yield('content')
+
 			</div>
+	
 		</section>
 
 		<!-- Vendor -->
