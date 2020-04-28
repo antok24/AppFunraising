@@ -15,7 +15,7 @@
 								<li><span>Data</span></li>
 								<li><span>Karyawan</span></li>
 							</ol>
-							<a class="sidebar-right-toggle" data-open="sidebar-right"><i class="fa fa-chevron-left"></i></a>
+							<a class="sidebar-right-toggle"  data-open="sidebar-right"><i class="fa fa-chevron-left"></i></a>
 						</div>
                     </header>
                     
@@ -25,7 +25,7 @@
 							<form id="form" action="" class="form-horizontal">
 								<section class="panel">
 									<header class="panel-heading">
-										<a href="" class="btn btn-success"><i class="fa fa-eye"></i> Lihat Data</a>	
+										<a href="{{route('karyawan.index')}}" class="btn btn-success"><i class="fa fa-eye"></i> Lihat Data</a>	
 									</header>
 									<div class="panel-body">
 										<div class="form-group">
