@@ -7,6 +7,7 @@ Route::get('/', function () {
 });
 
 Route::resource('karyawan', 'KaryawanController');
+Route::resource('inventaris', 'BarangController');
 
 
 

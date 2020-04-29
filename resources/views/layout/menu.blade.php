@@ -85,7 +85,7 @@
 				                                        </a>
 				                                    </li>
 													<li>
-				                                        <a href="layouts-boxed-fixed-header.html">
+				                                        <a href="{{route('inventaris.index')}}">
 				                                           Jenis Barang
 				                                        </a>
 				                                    </li>
