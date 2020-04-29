@@ -1,7 +1,7 @@
 @extends('layout.master')
 
 @section('content')
-            <section role="main" class="content-body">
+        <section role="main" class="content-body">
 					<header class="page-header">
 						<h2>Data Karyawan</h2>
 					
@@ -22,21 +22,23 @@
                     </header>
                     
 					<!-- start: page -->
-					
+				<section class="panel">
 					<header class="panel-heading">
-					<div class="col-md-3">
+					<a class="btn btn-primary" href="{{route('karyawan.create')}}"><i class="fa fa-plus"></i> Tambah Data</a>
+						<!-- <div class="col-md-3">
 							<a class="btn btn-primary" href="{{route('karyawan.create')}}"><i class="fa fa-plus"></i> Tambah Data</a>
-					</div>
-							<div class="col-md-offset-9">
-								<a href="#" class=" btn btn-danger btn-sm"><i class="fa fa-print"></i> Print</a>
-								<a href="#" class=" btn btn-warning btn-sm"><i class="fa fa-file-pdf-o"></i> PDF</a>
-								<a href="#" class=" btn btn-success btn-sm"><i class="fa fa-file-excel-o"></i> exel</a>
-							</div>
+						</div>
+						<div class="col-md-offset-9">
+							<a href="#" class=" btn btn-danger btn-sm"><i class="fa fa-print"></i> Print</a>
+							<a href="#" class=" btn btn-warning btn-sm"><i class="fa fa-file-pdf-o"></i> PDF</a>
+							<a href="#" class=" btn btn-success btn-sm"><i class="fa fa-file-excel-o"></i> exel</a>
+						</div> -->
 						
-					</header>				
+					</header>			
 					<div class="panel-body">
-						
-								<table  class="table table-bordered table-striped mb-none" id="example">
+						<div class="table-responsive">
+
+								<table  class="table table-bordered table-striped table-condensed mb-none" id="example">
 									<thead>
 										<tr>
 											<th>#</th>
@@ -47,7 +49,7 @@
 											<th>Email</th>
 											<th>Nama Pasangan</th>
 											<th>Alamat</th>
-											<th class="actions"></th>
+											<th></th>
 										</tr>
 									</thead>
 									@php
@@ -74,6 +76,8 @@
 									</tbody>
 								</table>
 							</div>
+						</div>
 					<!-- end: page -->
 				</section>
+		</section>
 @endsection
