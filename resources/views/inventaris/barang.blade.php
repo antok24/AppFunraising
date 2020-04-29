@@ -62,8 +62,6 @@
                                             <td>{{ $rows->merk_barang }}</td>
                                             <td>{{ $rows->nilai_perolehan }}</td>
                                             <td>{{ $rows->tahun_perolehan }}</td>
-                                            <td>{{ $rows->user_created }}</td>
-                                            <td>{{ $rows->user_updated }}</td>
 											<td>Links</td>
 											<td>Text only</td>
 											<td class="actions">
