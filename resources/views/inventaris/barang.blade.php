@@ -34,8 +34,8 @@
 								<div class="row">
 									<div class="col-sm-6">
 										<div class="mb-md">
-											<button id="addToTable" class="btn btn-primary">Tambah Baru <i class="fa fa-plus"></i></button>
-										</div>
+                                        <a class="btn btn-primary" href="{{route('inventaris.create')}}"><i class="fa fa-plus"></i> Tambah Data</a> 
+                                    </div>
 									</div>
 								</div>
 								<table class="table table-bordered table-striped mb-none" id="datatable-editable">
