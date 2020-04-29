@@ -20,7 +20,7 @@ class BarangController extends Controller
     {
         $barang = DB::table('t_barang')->get();
 
-        return view('inventaris.barang_edit',['barang=>$barang']);
+        return view('inventaris.barang_tambah',['barang_tambah'=> $barang]);
     }
 
 
