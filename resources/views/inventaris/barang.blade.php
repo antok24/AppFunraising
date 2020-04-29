@@ -13,7 +13,7 @@
 									</a>
 								</li>
 								<li><span>Tables</span></li>
-								<li><span>Editable</span></li>
+								<li><span>Barang</span></li>
 							</ol>
 					
 							<a class="sidebar-right-toggle" data-open="sidebar-right"><i class="fa fa-chevron-left"></i></a>
