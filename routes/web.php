@@ -7,6 +7,9 @@ Route::get('/', function () {
 });
 
 Route::resource('karyawan', 'KaryawanController');
+Route::resource('karyawan/tambah', 'KaryawanController@store');
+Route::resource('mustahiq', 'MustahiqController');
+Route::resource('relawan', 'RelawanController');
 Route::resource('inventaris', 'BarangController');
 
 
