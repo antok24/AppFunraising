@@ -21,84 +21,125 @@
 				                            <span>Dashboard</span>
 				                        </a>                        
 									</li>
-									
+
+									<li>
+				                        <a href="#">
+				                            <i class="fa fa-barcode" aria-hidden="true"></i>
+				                            <span>Transaksi Kontak</span>
+				                        </a>                        
+									</li>
+									<li class="nav-parent">
+				                        <a href="#">
+				                            <i class="fa fa-money" aria-hidden="true"></i>
+				                            <span>Donasi</span>
+										</a>
+										
+											<ul class="nav nav-children">
+														<li>
+															<a href="#">
+															<i class="fa fa-cubes" aria-hidden="true"></i> Kotak Infaq
+															</a>
+														</li>
+											</ul>
+											<ul class="nav nav-children">
+														<li>
+															<a href="#">
+															<i class="fa fa-heart" aria-hidden="true"></i> Donasi Lain
+															</a>
+												</li>
+											</ul>
+														
+										
+									</li>
 				                    <li class="nav-parent">
 				                        <a href="#">
-				                            <i class="fa fa-columns" aria-hidden="true"></i>
-				                            <span>Daftar Referensi Umum</span>
+				                            <i class="fa fa-th-large" aria-hidden="true"></i>
+				                            <span>Referensi Master</span>
 										</a>
-										 <ul class="nav nav-children">
-	
-				                            <li class="nav-parent">
-				                                <a>
-				                                    Referensi Sistem
-				                                </a>
-				                                <ul class="nav nav-children">
-				                                    <li>
-				                                        <a href="#">
-				                                            Fasilitas Manajemen Group User
-				                                        </a>
-				                                    </li>
-				                                    <li>
-				                                        <a href="#">
-				                                            Fasilitas Manajemen Users
-				                                        </a>
-				                                    </li>
-													<li>
-				                                        <a href="#">
-				                                            Fasilitas Manajemen Menu
-				                                        </a>
-				                                    </li>
-													<li>
-				                                        <a href="#">
-				                                           Fasilitas Mananjemen Hak Akses Menu
-				                                        </a>
-				                                    </li>
-				                                </ul>
-				                            </li>
-				                        </ul>
-				                        <ul class="nav nav-children">
-	
-				                            <li class="nav-parent">
-				                                <a>
-				                                    Referensi Master
-				                                </a>
-				                                <ul class="nav nav-children">
+				                            <ul class="nav nav-children">
 				                                    <li>
 				                                        <a href="{{route('karyawan.index')}}">
-				                                            Karyawan
+														<i class="fa fa-users" aria-hidden="true"></i> Karyawan
 				                                        </a>
 				                                    </li>
 				                                    <li>
-				                                        <a href="layouts-boxed-fixed-header.html">
-				                                            Relawan
+				                                        <a href="#">
+														<i class="fa fa-user" aria-hidden="true"></i> Relawan
 				                                        </a>
 				                                    </li>
 													<li>
-				                                        <a href="layouts-boxed-fixed-header.html">
-				                                            Mustahiq
+				                                        <a href="#">
+														<i class="fa fa-child" aria-hidden="true"></i> Mustahiq
 				                                        </a>
 				                                    </li>
 													<li>
-				                                        <a href="layouts-boxed-fixed-header.html">
-				                                            Kotak
+				                                        <a href="#">
+														<i class="fa fa-book" aria-hidden="true"></i> Donatur
 				                                        </a>
 				                                    </li>
 													<li>
 				                                        <a href="{{route('inventaris.index')}}">
-				                                           Jenis Barang
+														<i class="fa fa-building" aria-hidden="true"></i> Barang Inventaris
+				                                        </a>
+				                                    </li>
+				                            </ul>
+
+				                    </li>
+									<li class="nav-parent">
+				                        <a>
+				                            <i class="fa fa-archive" aria-hidden="true"></i>
+				                            <span>Laporan</span>
+										</a>
+										<ul class="nav nav-children">
+											<li>
+												<a href="#">
+												<i class="fa fa-area-chart" aria-hidden="true"></i> Laporan Distribusi Kotak
+												</a>
+											</li>
+											<li>
+												<a href="#">
+												<i class="fa fa-line-chart" aria-hidden="true"></i> Laporan Data Karyawan
+												</a>
+											</li>
+											<li>
+												<a href="#">
+												<i class="fa fa-bar-chart-o" aria-hidden="true"></i> Laporan Data Donatur
+												</a>
+											</li>
+											<li>
+												<a href="#">
+												<i class="fa fa-pie-chart" aria-hidden="true"></i> Laporan Mustahiq
+												</a>
+											</li>
+											<li>
+												<a href="#">
+												<i class="fa fa-bar-chart" aria-hidden="true"></i> Laporan Donasi
+												</a>
+											</li>
+										</ul>
+									</li>
+
+									<li class="nav-parent">
+				                                <a>
+												<i class="fa fa-cogs" aria-hidden="true"></i>
+				                                    Referensi Sistem
+				                                </a>
+				                                <ul class="nav nav-children">
+				                                    
+				                                    <li>
+				                                        <a href="#">
+														<i class="fa fa-user-o" aria-hidden="true"></i> Fasilitas Manajemen Users
+				                                        </a>
+				                                    </li>
+													
+													<li>
+				                                        <a href="#">
+														<i class="fa fa-sitemap" aria-hidden="true"></i> Fasilitas Mananjemen Hak Akses Menu
 				                                        </a>
 				                                    </li>
 				                                </ul>
-				                            </li>
-				                        </ul>
 				                    </li>
-									<li>
-				                        <a href="layouts-default.html">
-				                            <i class="fa fa-barcode" aria-hidden="true"></i>
-				                            <span>Transaksi</span>
-				                        </a>                        
-				                    </li>
+
 				                </ul>
 				            </nav>
 						</div>
