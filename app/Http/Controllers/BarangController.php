@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use App\Barang;
 
 class BarangController extends Controller
 {
@@ -18,15 +19,27 @@ class BarangController extends Controller
     
     public function create()
     {
-        $barang = DB::table('t_barang')->get();
-
-        return view('inventaris.barang_tambah',['barang_tambah'=> $barang]);
+        return view('inventaris.barang_tambah');
     }
 
 
     public function store(Request $request)
     {
         //
+    }
+
+    public function simpan(Request $request)
+    {
+        DB::table('t_barang')->insert([
+            'kode_barang' => $request->kode_barang,
+            'nama_barang' => $request->nama_barang,
+            'merk_barang' => $request->merk_barang,
+            'nilai_perolehan' => $request->nilai_perolehan,
+            'tahun_perolehan' => $request->tahun_perolehan,
+            'user_updated' => $request->user_updated,
+            'user_created' => $request->user_created
+        ]);
+        return redirect()->route('inventaris.index');
     }
 
     public function show($id)

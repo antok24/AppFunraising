@@ -8,6 +8,7 @@ Route::get('/', function () {
 
 Route::resource('karyawan', 'KaryawanController');
 Route::resource('inventaris', 'BarangController');
+Route::post('/inventaris/simpan', 'BarangController@simpan');
 
 
 
