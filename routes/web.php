@@ -11,6 +11,7 @@ Route::resource('karyawan/tambah', 'KaryawanController@store');
 Route::resource('mustahiq', 'MustahiqController');
 Route::resource('relawan', 'RelawanController');
 Route::resource('inventaris', 'BarangController');
+Route::post('/inventaris/simpan', 'BarangController@simpan');
 
 
 
