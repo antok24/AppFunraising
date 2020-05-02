@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use RealRashid\SweetAlert\Facades\Alert;
+
 class RelawanController extends Controller
 {
     /**
@@ -39,6 +41,7 @@ class RelawanController extends Controller
             'status' => "relawan",
             'nama_pasangan' => $request->pasangan
         ]);
+        Alert::success('Success', 'Data Relawan Berhasil Disimpan!');
         return redirect()->route('relawan.index');
     }
 

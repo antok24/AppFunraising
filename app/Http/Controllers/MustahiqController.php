@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 use App\Mustahiq;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class MustahiqController extends Controller
 {
@@ -54,6 +55,7 @@ class MustahiqController extends Controller
             'provinsi' => $request->provinsi,
             'ket' => $request->keterangan
         ]);
+        Alert::success('Success', 'Data Mustahiq Berhasil Disimpan!');
         return redirect()->route('mustahiq.index');
     }
 

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class DonaturController extends Controller
 {
@@ -49,6 +50,7 @@ class DonaturController extends Controller
             'kabupaten' => $request->kabupaten,
             'provinsi' => $request->provinsi
         ]);
+        Alert::success('Success', 'Data Donatur Berhasil Disimpan!');
         return redirect()->route('donatur.index');
     }
 
