@@ -21,7 +21,20 @@ class KaryawanController extends Controller
 
     public function store(Request $request)
     {
-        //
+        
+    }
+    public function simpan(Request $request){
+        DB::table('karyawan')->insert([
+            'nama_karyawan' => $request->nama,
+            'alamat' => $request->alamat,
+            'no_hp' => $request->tlp,
+            'email' => $request->email,
+            'pendidikan_terakhir' => $request->pendidikan,
+            'umur' => $request->umur,
+            'status' => $request->status,
+            'nama_pasangan' => $request->pasangan
+        ]);
+        return redirect()->route('karyawan.index');
     }
 
     public function show($id)
