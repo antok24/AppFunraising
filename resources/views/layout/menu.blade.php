@@ -23,7 +23,7 @@
 									</li>
 
 									<li>
-				                        <a href="#">
+				                        <a href="distribusi-kotak">
 				                            <i class="fa fa-barcode" aria-hidden="true"></i>
 				                            <span>Transaksi Kontak</span>
 				                        </a>                        
