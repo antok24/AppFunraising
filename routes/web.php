@@ -26,6 +26,8 @@ Route::post('relawan/simpan', 'RelawanController@simpan');
 
 Route::resource('inventaris', 'BarangController');
 Route::post('/inventaris/simpan', 'BarangController@simpan');
+Route::get('/inventaris/edit/{kode_barang}', 'BarangController@edit');
+Route::post('/inventaris/update', 'BarangController@update');
 
 
 

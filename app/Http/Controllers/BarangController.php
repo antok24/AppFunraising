@@ -49,14 +49,25 @@ class BarangController extends Controller
         //
     }
 
-    public function edit($id)
+    public function edit($kode_barang)
     {
-        //
+       
+	    $barang = DB::table('t_barang')->where('kode_barang',$kode_barang)->get();
+	    return view('inventaris.barang_edit',['barang'=> $barang]);
     }
 
-    public function update(Request $request, $id)
+    public function update(Request $request)
     {
-        //
+        DB::table('t_barang')->where ('kode_barang',$request->kode_barang)->update([
+            'nama_barang' => $request->nama_barang,
+            'merk_barang' => $request->merk_barang,
+            'nilai_perolehan' => $request->nilai_perolehan,
+            'tahun_perolehan' => $request->tahun_perolehan,
+            'user_updated' => $request->user_updated,
+            'user_created' => $request->user_created
+        ]);
+        Alert::success('Success', 'Data Berhasil disimpan');
+        return redirect()->route('inventaris.index');
     }
 
     public function destroy($id)

@@ -64,7 +64,9 @@
 											<td>{{ $rows->nilai_perolehan }}</td>
 											<td>{{ $rows->tahun_perolehan }}</td>
 											<td class="actions">
-												<a href="#" class="on-default edit-row"><i class="fa fa-pencil"></i></a>
+												
+												
+												<a href="/inventaris/edit/{{$rows->kode_barang}}" class="fa fa-pencil"></a>
 												<a href="#" class="on-default remove-row"><i class="fa fa-trash-o"></i></a>
 											</th>
 										</tr>
