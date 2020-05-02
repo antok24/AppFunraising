@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Barang;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class BarangController extends Controller
 {
@@ -39,6 +40,7 @@ class BarangController extends Controller
             'user_updated' => $request->user_updated,
             'user_created' => $request->user_created
         ]);
+        Alert::success('Success', 'Data Berhasil disimpan');
         return redirect()->route('inventaris.index');
     }
 

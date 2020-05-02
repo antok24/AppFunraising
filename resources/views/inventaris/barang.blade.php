@@ -3,7 +3,7 @@
 @section('content')
         <section role="main" class="content-body">
 					<header class="page-header">
-						<h2>Data Karyawan</h2>
+						<h2>Data Barang</h2>
 					
 						<div class="right-wrapper pull-right">
 							<ol class="breadcrumbs">
@@ -13,13 +13,13 @@
 									</a>
 								</li>
 								<li><span>Data</span></li>
-								<li><span>Karyawan </span></li>
+								<li><span>Barang </span></li>
 								
 							</ol>
 							<a class="sidebar-right-toggle" data-open="sidebar-right"><i class="fa fa-chevron-left"></i></a>
 							
 						</div>
-                    </header>
+					</header>
                     
 					<!-- start: page -->
 				<section class="panel">
