@@ -8,8 +8,22 @@ Route::get('/', function () {
 
 Route::resource('karyawan', 'KaryawanController');
 Route::post('karyawan/simpan', 'KaryawanController@simpan');
-//Route::resource('mustahiq', 'MustahiqController');
-//Route::resource('relawan', 'RelawanController');
+
+Route::resource('mustahiq', 'MustahiqController');
+Route::post('mustahiq/simpan', 'MustahiqController@simpan');
+
+Route::resource('donatur', 'DonaturController');
+Route::post('donatur/simpan', 'DonaturController@simpan');
+
+Route::resource('donasi', 'DonasiController');
+Route::post('donasi/simpan', 'DonasiController@simpan');
+
+Route::resource('donasikotak', 'DonasiKotakController');
+Route::post('donasikotak/simpan', 'DonasiKotakController@simpan');
+
+Route::resource('relawan', 'RelawanController');
+Route::post('relawan/simpan', 'RelawanController@simpan');
+
 Route::resource('inventaris', 'BarangController');
 Route::post('/inventaris/simpan', 'BarangController@simpan');
 

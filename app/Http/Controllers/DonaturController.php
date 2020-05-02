@@ -3,9 +3,8 @@
 namespace App\Http\Controllers;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
-use App\Mustahiq;
 
-class MustahiqController extends Controller
+class DonaturController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,12 +13,9 @@ class MustahiqController extends Controller
      */
     public function index()
     {
-        $mustahiq = DB::table('t_mustahiq')->get();
+        $donatur = DB::table('t_donatur')->get();
 
-        return view('mustahiq.tabel', ['data_mustahiq' => $mustahiq]);
-        //$data_mustahiq = Mustahiq::all();
-        //return view('mustahiq.tabel',compact('data_mustahiq'));
-
+        return view('donatur.tabel', ['data_donatur' => $donatur]);
     }
 
     /**
@@ -29,7 +25,7 @@ class MustahiqController extends Controller
      */
     public function create()
     {
-        return view('mustahiq.tambah');
+        return view('donatur.tambah');
     }
 
     /**
@@ -42,19 +38,18 @@ class MustahiqController extends Controller
     {
         //
     }
-    
+
     public function simpan(Request $request)
     {
-        DB::table('t_mustahiq')->insert([
-            'nama_mustahiq' => $request->nama,
+        DB::table('t_donatur')->insert([
+            'nama_donatur' => $request->nama,
             'alamat' => $request->alamat,
             'no_tlp' => $request->tlp,
             'kecamatan' => $request->kecamatan,
             'kabupaten' => $request->kabupaten,
-            'provinsi' => $request->provinsi,
-            'ket' => $request->keterangan
+            'provinsi' => $request->provinsi
         ]);
-        return redirect()->route('mustahiq.index');
+        return redirect()->route('donatur.index');
     }
 
     /**

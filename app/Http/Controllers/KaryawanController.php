@@ -9,7 +9,7 @@ class KaryawanController extends Controller
 {
     public function index()
     {
-        $data = DB::table('karyawan')->get();
+        $data = DB::table('karyawan')->where('status', 'karyawan')->get();
 
         return view('karyawan.tabel', ['data' => $data]);
     }
@@ -31,7 +31,7 @@ class KaryawanController extends Controller
             'email' => $request->email,
             'pendidikan_terakhir' => $request->pendidikan,
             'umur' => $request->umur,
-            'status' => $request->status,
+            'status' => "karyawan",
             'nama_pasangan' => $request->pasangan
         ]);
         return redirect()->route('karyawan.index');

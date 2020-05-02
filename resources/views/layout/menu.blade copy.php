@@ -75,7 +75,7 @@
 				                                        </a>
 				                                    </li>
 													<li>
-				                                        <a href="layouts-boxed-fixed-header.html">
+				                                        <a href="{{route('mustahiq.index')}}">
 				                                            Mustahiq
 				                                        </a>
 				                                    </li>

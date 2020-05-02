@@ -1,11 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
-use Illuminate\Support\Facades\DB;
-use Illuminate\Http\Request;
-use App\Mustahiq;
 
-class MustahiqController extends Controller
+use Illuminate\Http\Request;
+
+class TransaksiDonasiController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,12 +13,7 @@ class MustahiqController extends Controller
      */
     public function index()
     {
-        $mustahiq = DB::table('t_mustahiq')->get();
-
-        return view('mustahiq.tabel', ['data_mustahiq' => $mustahiq]);
-        //$data_mustahiq = Mustahiq::all();
-        //return view('mustahiq.tabel',compact('data_mustahiq'));
-
+        //
     }
 
     /**
@@ -29,7 +23,7 @@ class MustahiqController extends Controller
      */
     public function create()
     {
-        return view('mustahiq.tambah');
+        //
     }
 
     /**
@@ -41,20 +35,6 @@ class MustahiqController extends Controller
     public function store(Request $request)
     {
         //
-    }
-    
-    public function simpan(Request $request)
-    {
-        DB::table('t_mustahiq')->insert([
-            'nama_mustahiq' => $request->nama,
-            'alamat' => $request->alamat,
-            'no_tlp' => $request->tlp,
-            'kecamatan' => $request->kecamatan,
-            'kabupaten' => $request->kabupaten,
-            'provinsi' => $request->provinsi,
-            'ket' => $request->keterangan
-        ]);
-        return redirect()->route('mustahiq.index');
     }
 
     /**

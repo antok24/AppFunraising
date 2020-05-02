@@ -1,11 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
-use Illuminate\Support\Facades\DB;
-use Illuminate\Http\Request;
-use App\Mustahiq;
 
-class MustahiqController extends Controller
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+class RelawanController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,12 +13,9 @@ class MustahiqController extends Controller
      */
     public function index()
     {
-        $mustahiq = DB::table('t_mustahiq')->get();
+        $data = DB::table('karyawan')->where('status', 'relawan')->get();
 
-        return view('mustahiq.tabel', ['data_mustahiq' => $mustahiq]);
-        //$data_mustahiq = Mustahiq::all();
-        //return view('mustahiq.tabel',compact('data_mustahiq'));
-
+        return view('relawan.tabel', ['data' => $data]);
     }
 
     /**
@@ -29,7 +25,21 @@ class MustahiqController extends Controller
      */
     public function create()
     {
-        return view('mustahiq.tambah');
+        return view('relawan.tambah');
+    }
+
+    public function simpan(Request $request){
+        DB::table('karyawan')->insert([
+            'nama_karyawan' => $request->nama,
+            'alamat' => $request->alamat,
+            'no_hp' => $request->tlp,
+            'email' => $request->email,
+            'pendidikan_terakhir' => $request->pendidikan,
+            'umur' => $request->umur,
+            'status' => "relawan",
+            'nama_pasangan' => $request->pasangan
+        ]);
+        return redirect()->route('relawan.index');
     }
 
     /**
@@ -41,20 +51,6 @@ class MustahiqController extends Controller
     public function store(Request $request)
     {
         //
-    }
-    
-    public function simpan(Request $request)
-    {
-        DB::table('t_mustahiq')->insert([
-            'nama_mustahiq' => $request->nama,
-            'alamat' => $request->alamat,
-            'no_tlp' => $request->tlp,
-            'kecamatan' => $request->kecamatan,
-            'kabupaten' => $request->kabupaten,
-            'provinsi' => $request->provinsi,
-            'ket' => $request->keterangan
-        ]);
-        return redirect()->route('mustahiq.index');
     }
 
     /**

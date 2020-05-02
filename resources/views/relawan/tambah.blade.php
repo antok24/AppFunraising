@@ -3,17 +3,17 @@
 @section('content')
             <section class="content-body">
 					<header class="page-header">
-						<h2>Tambah Data Karyawan</h2>
+						<h2>Tambah Data Relawan</h2>
 					
 						<div class="right-wrapper pull-right">
 							<ol class="breadcrumbs">
 								<li>
-									<a href="#">
+									<a href="index.html">
 										<i class="fa fa-home"></i>
 									</a>
 								</li>
 								<li><span>Data</span></li>
-								<li><span>Karyawan</span></li>
+								<li><span>Relawan</span></li>
 							</ol>
 							<a class="sidebar-right-toggle"  data-open="sidebar-right"><i class="fa fa-chevron-left"></i></a>
 						</div>
@@ -22,15 +22,15 @@
 					<!-- start: page -->					
 					<div class="row">
 						<div class="col-md-12">
-							<form action="{{url('karyawan/simpan')}}" method="POST" class="form-horizontal">
+							<form action="{{url('relawan/simpan')}}" method="POST" class="form-horizontal">
 							@csrf
 								<section class="panel">
 									<header class="panel-heading">
-										<a href="{{route('karyawan.index')}}" class="btn btn-success"><i class="fa fa-eye"></i> Lihat Data</a>	
+										<a href="{{route('relawan.index')}}" class="btn btn-success"><i class="fa fa-eye"></i> Lihat Data</a>	
 									</header>
 									<div class="panel-body">
 										<div class="form-group">
-											<label class="col-sm-3 control-label">Nama Karyawan <span class="required">*</span></label>
+											<label class="col-sm-3 control-label">Nama Relawan <span class="required">*</span></label>
 											<div class="col-sm-9">
 												<input type="text" name="nama" class="form-control" placeholder="eg.: John Doe" required/>
 											</div>

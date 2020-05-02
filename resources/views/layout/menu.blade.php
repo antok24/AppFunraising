@@ -36,14 +36,14 @@
 										
 											<ul class="nav nav-children">
 														<li>
-															<a href="#">
+															<a href="{{route('donasikotak.index')}}">
 															<i class="fa fa-cubes" aria-hidden="true"></i> Kotak Infaq
 															</a>
 														</li>
 											</ul>
 											<ul class="nav nav-children">
 														<li>
-															<a href="#">
+															<a href="{{route('donasi.index')}}">
 															<i class="fa fa-heart" aria-hidden="true"></i> Donasi Lain
 															</a>
 												</li>
@@ -63,17 +63,17 @@
 				                                        </a>
 				                                    </li>
 				                                    <li>
-				                                        <a href="#">
+				                                        <a href="{{route('relawan.index')}}">
 														<i class="fa fa-user" aria-hidden="true"></i> Relawan
 				                                        </a>
 				                                    </li>
 													<li>
-				                                        <a href="#">
+				                                        <a href="{{route('mustahiq.index')}}">
 														<i class="fa fa-child" aria-hidden="true"></i> Mustahiq
 				                                        </a>
 				                                    </li>
 													<li>
-				                                        <a href="#">
+				                                        <a href="{{route('donatur.index')}}">
 														<i class="fa fa-book" aria-hidden="true"></i> Donatur
 				                                        </a>
 				                                    </li>
