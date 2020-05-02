@@ -22,7 +22,8 @@
 					<!-- start: page -->					
 					<div class="row">
 						<div class="col-md-12">
-							<form id="form" action="" method="POST" class="form-horizontal">
+							<form action="{{url('karyawan/simpan')}}" method="POST" class="form-horizontal">
+							@csrf
 								<section class="panel">
 									<header class="panel-heading">
 										<a href="{{route('karyawan.index')}}" class="btn btn-success"><i class="fa fa-eye"></i> Lihat Data</a>	

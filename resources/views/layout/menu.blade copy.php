@@ -16,7 +16,7 @@
 				            
 				                <ul class="nav nav-main">
 				                    <li>
-				                        <a href="layouts-default.html">
+				                        <a href="">
 				                            <i class="fa fa-home" aria-hidden="true"></i>
 				                            <span>Dashboard</span>
 				                        </a>                        
