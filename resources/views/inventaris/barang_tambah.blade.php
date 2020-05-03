@@ -48,6 +48,12 @@
 											</div>
 										</div>
 										<div class="form-group">
+											<label class="col-sm-3 control-label">Jumlah <span class="required">*</span></label>
+											<div class="col-sm-9">
+												<input type="text" name="jumlah" class="form-control" placeholder="Jumlah" required/>
+											</div>
+										</div>
+										<div class="form-group">
 											<label class="col-sm-3 control-label">Nilai Perolehan<span class="required">*</span></label>
 											<div class="col-sm-9">
 												<input type="text" name="nilai_perolehan" class="form-control" placeholder="Nilai Perolehan" required/>

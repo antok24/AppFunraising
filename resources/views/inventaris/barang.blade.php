@@ -45,6 +45,7 @@
 											<th>Kode Barang</th>
 											<th>Nama Barang</h>
 											<th>Merk</th>
+											<th>Jumlah</th>
 											<th>Harga</th>
 											<th>Tahun Perolehan</th>
 											<th>Actions</th>
@@ -61,13 +62,14 @@
 											<td>{{ $rows->kode_barang }}</td>
 											<td>{{ $rows->nama_barang }}</td>
 											<td>{{ $rows->merk_barang }}</td>
+											<td>{{ $rows->jumlah }}</td>
 											<td>{{ $rows->nilai_perolehan }}</td>
 											<td>{{ $rows->tahun_perolehan }}</td>
 											<td class="actions">
 												
 												
 												<a href="/inventaris/edit/{{$rows->kode_barang}}" class="fa fa-pencil"></a>
-												<a href="#" class="on-default remove-row"><i class="fa fa-trash-o"></i></a>
+												<a href="/inventaris/delete/{{$rows->kode_barang}}" class="fa fa-trash-o"></i></a>
 											</th>
 										</tr>
 									@endforeach

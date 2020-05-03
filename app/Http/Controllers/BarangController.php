@@ -35,6 +35,7 @@ class BarangController extends Controller
             'kode_barang' => $request->kode_barang,
             'nama_barang' => $request->nama_barang,
             'merk_barang' => $request->merk_barang,
+            'jumlah'      => $request->jumlah,
             'nilai_perolehan' => $request->nilai_perolehan,
             'tahun_perolehan' => $request->tahun_perolehan,
             'user_updated' => $request->user_updated,
@@ -61,13 +62,21 @@ class BarangController extends Controller
         DB::table('t_barang')->where ('kode_barang',$request->kode_barang)->update([
             'nama_barang' => $request->nama_barang,
             'merk_barang' => $request->merk_barang,
+            'jumlah'      => $request->jumlah,
             'nilai_perolehan' => $request->nilai_perolehan,
             'tahun_perolehan' => $request->tahun_perolehan,
             'user_updated' => $request->user_updated,
             'user_created' => $request->user_created
         ]);
-        Alert::success('Success', 'Data Berhasil disimpan');
+        Alert::success('Success', 'Data Berhasil diupdate');
         return redirect()->route('inventaris.index');
+    }
+
+    public function delete($kode_barang)
+    {
+        DB::table('t_barang')->where ('kode_barang',$kode_barang)->delete();
+        Alert::success('Success', 'Data Berhasil dihapus');
+        return redirect('inventaris/barang');
     }
 
     public function destroy($id)
