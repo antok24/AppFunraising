@@ -48,12 +48,7 @@
 												<input value="{{$rows->merk_barang}}" type="text" name="merk_barang" class="form-control" placeholder="Merk" required/>
 											</div>
 										</div>
-										<div class="form-group">
-											<label class="col-sm-3 control-label">jumlah <span class="required">*</span></label>
-											<div class="col-sm-9">
-												<input value="{{$rows->jumlah}}" type="text" name="merk_barang" class="form-control" placeholder="Merk" required/>
-											</div>
-										</div>
+										
 										<div class="form-group">
 											<label class="col-sm-3 control-label">Nilai Perolehan<span class="required">*</span></label>
 											<div class="col-sm-9">
@@ -71,8 +66,14 @@
 													</div>
 												</div>
 											</div>
-											<input type="hidden" name="user_created" value="{{ 1 }}">
-											<input type="hidden" name="user_updated" value="{{ 1 }}">
+											<div class="form-group">
+											<label class="col-sm-3 control-label">jumlah <span class="required">*</span></label>
+											<div class="col-sm-9">
+												<input value="{{$rows->jumlah}}" type="text" name="jumlah" class="form-control" placeholder="Merk" required/>
+											</div>
+										</div>
+											<!--<input type="hidden" name="user_created" value="{{ 1 }}"> 
+											<input type="hidden" name="user_updated" value="{{ 1 }}"> -->
 										</div>
 										<div class="form-group">
 											<footer class="panel-footer">

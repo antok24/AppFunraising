@@ -70,8 +70,9 @@
 													</div>
 												</div>
 											</div>
-											<input type="hidden" name="user_created" value="{{ 1 }}">
-											<input type="hidden" name="user_updated" value="{{ 1 }}">
+										
+										<input type="hidden" name="user_created" value="{{ 1 }}">
+									    <input type="hidden" name="user_updated" value="{{ 1 }}">
 										</div>
 										<div class="form-group">
 											<footer class="panel-footer">
