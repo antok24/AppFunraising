@@ -36,7 +36,6 @@
 										<tr>
 											<th>#</th>
 											<th>Kode Kotak</th>
-											<th>Jenis Donasi</th>
 											<th>Jumlah</th>
 											<th>Waktu Transaksi</th>
 											<th>Deskripsi</th>
@@ -52,19 +51,6 @@
 										<tr>
 											<td>{{ $no++ }}</td>
 											<td>{{ $rows->donatur }}</td>
-											<td>
-                                                @if ($rows->jenis == "infaq")
-                                                    <span class='label label-info'> {{$rows->jenis}} </span>
-                                                @elseif ($rows->jenis == "sedekah")
-                                                    <span class='label label-success'> {{$rows->jenis}} </span>
-                                                @elseif($rows->jenis == "hibah")
-                                                    <span class='label label-warning'> {{$rows->jenis}} </span>
-                                                @elseif($rows->jenis == "zakat")
-                                                    <span class='label label-danger'> {{$rows->jenis}} </span>
-                                                @elseif($rows->jenis == "lain-lain")
-                                                    <span class='label label-primary'> {{$rows->jenis}} </span>
-                                                @endif
-                                            </td>
 											<td>@currency($rows->jumlah)</td>
 											<td>{{date('j F Y', strtotime($rows->tgl_transaksi))}}</td>
 											<td>{{ $rows->ket }}</td>

@@ -17,7 +17,7 @@ class DonasiKotakController extends Controller
     {
         $donasi = DB::table('transaksi_donasi')->where('kategori', 'kotak')->get();
 
-        return view('donasi.tabelDonasi', ['dataDonasi' => $donasi]);
+        return view('donasi_kotak.tabelDonasiKotak', ['dataDonasi' => $donasi]);
     }
 
     /**
@@ -39,6 +39,20 @@ class DonasiKotakController extends Controller
     public function store(Request $request)
     {
         //
+    }
+
+    public function simpan(Request $request)
+    {
+        DB::table('transaksi_donasi')->insert([
+            'nama_donatur' => $request->nama,
+            'alamat' => $request->alamat,
+            'no_tlp' => $request->tlp,
+            'kecamatan' => $request->kecamatan,
+            'kabupaten' => $request->kabupaten,
+            'provinsi' => $request->provinsi
+        ]);
+        Alert::success('Success', 'Data Donatur Berhasil Disimpan!');
+        return redirect()->route('donatur.index');
     }
 
     /**
