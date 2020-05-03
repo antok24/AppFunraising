@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 use RealRashid\SweetAlert\Facades\Alert;
+use Carbon\Carbon;
 
 class TransaksiDonasiController extends Controller
 {
@@ -14,7 +15,9 @@ class TransaksiDonasiController extends Controller
      */
     public function index()
     {
-        $donasi = DB::table('transaksi_donasi')->where('kategori', 'donasi')->get();
+        date_default_timezone_set("Asia/Bangkok");
+        
+        $donasi = DB::table('transaksi_donasi')->Where('kategori', 'donasi')->whereDate('tgl_transaksi', '=', Carbon::today()->toDateString())->get();
 
         return view('donasi.tabelDonasi', ['dataDonasi' => $donasi]);
     }
