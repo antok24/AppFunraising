@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateTTransaksiDonasiTable extends Migration
+class CreateTransaksiDonasiTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,10 @@ class CreateTTransaksiDonasiTable extends Migration
      */
     public function up()
     {
-        Schema::create('t_transaksi_donasi', function (Blueprint $table) {
+        Schema::create('transaksi_donasi', function (Blueprint $table) {
             $table->increments('id_donasi');
             $table->string('donatur',20);
+            $table->string('kategori',20);
             $table->string('jenis',20);
             $table->integer('jumlah');
             $table->datetime('tgl_transaksi');
@@ -31,6 +32,6 @@ class CreateTTransaksiDonasiTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('t_transaksi_donasi');
+        Schema::dropIfExists('transaksi_donasi');
     }
 }

@@ -23,7 +23,7 @@
 									</li>
 
 									<li>
-				                        <a href="#">
+				                        <a href="distribusi-kotak">
 				                            <i class="fa fa-barcode" aria-hidden="true"></i>
 				                            <span>Transaksi Kontak</span>
 				                        </a>                        
@@ -36,7 +36,7 @@
 										
 											<ul class="nav nav-children">
 														<li>
-															<a href="{{route('donasikotak.index')}}">
+															<a href="{{route('donasi_kotak.index')}}">
 															<i class="fa fa-cubes" aria-hidden="true"></i> Kotak Infaq
 															</a>
 														</li>

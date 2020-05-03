@@ -15,11 +15,11 @@ Route::post('mustahiq/simpan', 'MustahiqController@simpan');
 Route::resource('donatur', 'DonaturController');
 Route::post('donatur/simpan', 'DonaturController@simpan');
 
-Route::resource('donasi', 'DonasiController');
-Route::post('donasi/simpan', 'DonasiController@simpan');
+Route::resource('donasi', 'TransaksiDonasiController');
+Route::post('donasi/simpan', 'TransaksiDonasiController@simpan');
 
-Route::resource('donasikotak', 'DonasiKotakController');
-Route::post('donasikotak/simpan', 'DonasiKotakController@simpan');
+Route::resource('donasi_kotak', 'DonasiKotakController');
+Route::post('donasi_kotak/simpan', 'DonasiKotakController@simpan');
 
 Route::resource('relawan', 'RelawanController');
 Route::post('relawan/simpan', 'RelawanController@simpan');
@@ -30,6 +30,6 @@ Route::get('/inventaris/edit/{kode_barang}', 'BarangController@edit');
 Route::post('/inventaris/update', 'BarangController@update');
 Route::get('/inventaris/delete/{kode_barang}', 'BarangController@delete');
 
-
+Route::resource('distribusi-kotak', 'DistribusiKotakController');
 
 
