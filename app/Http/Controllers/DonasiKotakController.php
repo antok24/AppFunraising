@@ -1,11 +1,12 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 use RealRashid\SweetAlert\Facades\Alert;
 
-class DonasiController extends Controller
+class DonasiKotakController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +15,9 @@ class DonasiController extends Controller
      */
     public function index()
     {
-        //
+        $donasi = DB::table('transaksi_donasi')->where('kategori', 'kotak')->get();
+
+        return view('donasi.tabelDonasi', ['dataDonasi' => $donasi]);
     }
 
     /**
@@ -24,7 +27,7 @@ class DonasiController extends Controller
      */
     public function create()
     {
-        //
+        return view('donasi_Kotak.tambahDonasiKotak');
     }
 
     /**

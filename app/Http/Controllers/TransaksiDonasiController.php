@@ -14,7 +14,9 @@ class TransaksiDonasiController extends Controller
      */
     public function index()
     {
-        //
+        $donasi = DB::table('transaksi_donasi')->where('kategori', 'donasi')->get();
+
+        return view('donasi.tabelDonasi', ['dataDonasi' => $donasi]);
     }
 
     /**
@@ -24,7 +26,7 @@ class TransaksiDonasiController extends Controller
      */
     public function create()
     {
-        //
+        return view('donasi.tambahDonasi');
     }
 
     /**
