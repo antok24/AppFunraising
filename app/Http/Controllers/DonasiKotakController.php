@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 use RealRashid\SweetAlert\Facades\Alert;
+use Carbon\Carbon;
 
 class DonasiKotakController extends Controller
 {
@@ -27,7 +28,9 @@ class DonasiKotakController extends Controller
      */
     public function create()
     {
-        return view('donasi_Kotak.tambahDonasiKotak');
+        $timenow = Carbon::now()->format('Y-m-d');
+
+        return view('donasi_Kotak.tambahDonasiKotak', compact('timenow'));
     }
 
     /**
