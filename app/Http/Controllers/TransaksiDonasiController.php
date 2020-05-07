@@ -29,7 +29,23 @@ class TransaksiDonasiController extends Controller
      */
     public function create()
     {
-        return view('donasi.tambahDonasi');
+        $donatur = DB::table('t_donatur')->get();
+
+        return view('donasi.tambahDonasi', ['data_donatur' => $donatur]);
+    }
+
+    public function simpan(Request $request)
+    {
+        DB::table('t_transaksi_donasi')->insert([
+            'nama_donatur' => $request->nama,
+            'alamat' => $request->alamat,
+            'no_tlp' => $request->tlp,
+            'kecamatan' => $request->kecamatan,
+            'kabupaten' => $request->kabupaten,
+            'provinsi' => $request->provinsi
+        ]);
+        Alert::success('Success', 'Data Donatur Berhasil Disimpan!');
+        return redirect()->route('donatur.index');
     }
 
     /**

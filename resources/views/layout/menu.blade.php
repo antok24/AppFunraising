@@ -25,7 +25,7 @@
 									<li>
 				                        <a href="distribusi-kotak">
 				                            <i class="fa fa-barcode" aria-hidden="true"></i>
-				                            <span>Transaksi Kontak</span>
+				                            <span>Distribusi Kontak</span>
 				                        </a>                        
 									</li>
 									<li class="nav-parent">

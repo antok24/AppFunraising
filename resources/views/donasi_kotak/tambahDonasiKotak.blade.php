@@ -32,7 +32,7 @@
 										<div class="form-group">
 											<label class="col-sm-3 control-label">Kode Kotak <span class="required">*</span></label>
 											<div class="col-sm-6">
-												<input type="text" name="nama" class="form-control" placeholder="eg.: John Doe" required/>
+												<input type="text" name="nama" class="form-control" placeholder="eg.: KTK098" required/>
 											</div>
 										</div>
 										

@@ -7,7 +7,7 @@
 						<div class="right-wrapper pull-right">
 							<ol class="breadcrumbs">
 								<li>
-									<a href="index.html">
+									<a href="">
 										<i class="fa fa-home"></i>
 									</a>
 								</li>
@@ -17,5 +17,11 @@
 							<a class="sidebar-right-toggle" data-open="sidebar-right"><i class="fa fa-chevron-left"></i></a>
 						</div>
                     </header>
+					
+					<section role="main" class="content-body">
+						<section class="panel">
+						<img src="{{asset('assets/images/!logged-user.jpg')}}" width="100%">
+						</section>
+					</section>
 
 @endsection
