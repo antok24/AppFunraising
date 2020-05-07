@@ -32,4 +32,14 @@ Route::get('/inventaris/delete/{kode_barang}', 'BarangController@delete');
 
 Route::resource('distribusi-kotak', 'DistribusiKotakController');
 
+/*  laporan */
+Route::group(['prefix'=> 'laporan'], function()
+	{
+		Route::get('/donasi','LaporanDonasi@index')->name('laporan-donasi.index');
+		Route::post('/donasi/search','LaporanDonasi@search')->name('laporan-donasi.search');
+
+		Route::get('/edit/{id}','SertifikatAllController@edit')->name('sertifikatall.edit');
+	});
+
+
 

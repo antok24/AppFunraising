@@ -62,7 +62,7 @@
 			</div>
 		@include('layout.sisikanan')
 		</section>
-
+		@yield('js')
 		<!-- Vendor -->
 		<script src="{{asset('assets/vendor/jquery/jquery.js')}}"></script>
 		<script src="{{asset('assets/vendor/jquery-browser-mobile/jquery.browser.mobile.js')}}"></script>

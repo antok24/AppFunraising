@@ -50,7 +50,7 @@
                                         <div class="form-group">
 											<label class="col-sm-3 control-label">Tanggal Transaksi <span class="required">*</span></label>
 											<div class="col-sm-6">
-												<input type="date" value="iki looo" name="tgl" class="form-control" placeholder="eg.: John Doe" required/>
+												<input type="date" value="{{ $timenow }}" name="tgl" class="form-control" placeholder="eg.: John Doe" required/>
 											</div>
 										</div>
 

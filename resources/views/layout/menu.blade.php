@@ -112,7 +112,7 @@
 												</a>
 											</li>
 											<li>
-												<a href="#">
+												<a href="{{ route('laporan-donasi.index') }}">
 												<i class="fa fa-bar-chart" aria-hidden="true"></i> Laporan Donasi
 												</a>
 											</li>
