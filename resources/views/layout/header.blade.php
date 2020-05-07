@@ -1,7 +1,7 @@
 <header class="header">
 				<div class="logo-container">
-					<a href="../1.7.0" class="logo">
-						<img src="assets/images/rumahsedekah.png" width="110" height="35" alt="kkk" />
+					<a href="/" class="logo">
+						<img src="{{asset('assets/images/rumahsedekah.png')}}" width="110" height="35" alt="kkk" />
 					</a>
 					<div class="visible-xs toggle-sidebar-left" data-toggle-class="sidebar-left-opened" data-target="html" data-fire-event="sidebar-left-opened">
 						<i class="fa fa-bars" aria-label="Toggle sidebar"></i>
