@@ -71,9 +71,10 @@ class DonaturController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit($id_donatur)
     {
-        //
+        $donatur = DB::table('t_donatur')->where('id_donatur',$id_donatur)->get();
+	    return view('donatur.donatur_edit',['donatur'=> $donatur]);
     }
 
     /**
@@ -83,17 +84,26 @@ class DonaturController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request)
     {
-        //
-    }
+        DB::table('t_donatur')->where ('id_donatur',$request->id_donatur)->update([
+            'nama_donatur' => $request->nama_donatur,
+            'alamat'       => $request->alamat,
+            'no_tlp'       => $request->no_tlp,
+            'kecamatan'    => $request->kecamatan,
+            'kabupaten'    => $request->kabupaten,
+            'provinsi'     => $request->provinsi
+            ]); 
+            Alert::success('Success', 'Data Berhasil diupdate');
+            return redirect()->route('donatur.index');
+        }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+        public function delete($id_donatur)
+        {
+            DB::table('t_donatur')->where ('id_donatur',$id_donatur)->delete();
+            Alert::success('Success', 'Data Berhasil dihapus');
+            return redirect()->route('donatur.index');
+        }
     public function destroy($id)
     {
         //

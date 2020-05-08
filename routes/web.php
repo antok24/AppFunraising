@@ -14,6 +14,9 @@ Route::post('mustahiq/simpan', 'MustahiqController@simpan');
 
 Route::resource('donatur', 'DonaturController');
 Route::post('donatur/simpan', 'DonaturController@simpan');
+Route::get('/donatur/edit/{id_donatur}', 'DonaturController@edit');
+Route::post('/donatur/update', 'DonaturController@update');
+Route::get('/donatur/delete/{id_donatur}', 'DonaturController@delete');
 
 Route::resource('donasi', 'TransaksiDonasiController');
 Route::post('donasi/simpan', 'TransaksiDonasiController@simpan');

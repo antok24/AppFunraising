@@ -33,13 +33,19 @@
 										<div class="form-group">
 											<label class="col-sm-3 control-label">Kode Barang <span class="required">*</span></label>
 											<div class="col-sm-9">
-												<input value="{{$rows->kode_barang}}" type="text" name="kode_barang" class="form-control" placeholder="Kode Barang" required/>
+												<input value="{{$rows->kode_barang}}" type="text"  readonly="readonly" name="kode_barang" class="form-control" placeholder="Kode Barang" required/>
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-sm-3 control-label">Kategori Barang <span class="required">*</span></label>
+											<div class="col-sm-9">
+												<input value="{{$rows->nama_barang}}" type="text" name="nama_barang" class="form-control" placeholder="Nama Barang" required/>
 											</div>
 										</div>
 										<div class="form-group">
 											<label class="col-sm-3 control-label">Nama Barang <span class="required">*</span></label>
 											<div class="col-sm-9">
-												<input value="{{$rows->nama_barang}}" type="text" name="nama_barang" class="form-control" placeholder="Nama Barang" required/>
+												<input value="{{$rows->kategori_barang}}" type="text" name="kategori_barang" class="form-control" placeholder="Kategori Barang" required/>
 											</div>
 										</div>
 										<div class="form-group">
@@ -71,7 +77,7 @@
 											<div class="col-sm-9">
 												<input value="{{$rows->jumlah}}" type="text" name="jumlah" class="form-control" placeholder="Merk" required/>
 											</div>
-										</div>
+											</div>
 											<!--<input type="hidden" name="user_created" value="{{ 1 }}"> 
 											<input type="hidden" name="user_updated" value="{{ 1 }}"> -->
 										</div>

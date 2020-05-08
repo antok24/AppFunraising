@@ -36,11 +36,12 @@
 										<tr>
 											<th>#</th>
 											<th>Nama Donatur</th>
-											<th>No Tlp</th>
 											<th>Alamat</th>
+											<th>No Tlp</th>
+											<th>kecamatan</th>
 											<th>Kabupaten</th>
 											<th>Provinsi</th>
-											<th></th>
+											<th>Action</th>
 										</tr>
 									</thead>
 									@php
@@ -52,13 +53,14 @@
 										<tr>
 											<td>{{ $no++ }}</td>
 											<td>{{ $rows->nama_donatur }}</td>
-											<td>{{ $rows->no_tlp }}</td>
 											<td>{{ $rows->alamat }}</td>
+											<td>{{ $rows->no_tlp }}</td>
+											<td>{{ $rows->kecamatan}}</td>
 											<td>{{ $rows->kabupaten }}</td>
 											<td>{{ $rows->provinsi }}</td>
 											<td class="actions">
-												<a href="#" class="on-default edit-row"><i class="fa fa-pencil"></i></a>
-												<a href="#" class="on-default remove-row"><i class="fa fa-trash-o"></i></a>
+												<a href="/donatur/edit/{{$rows->id_donatur}}" class="on-default edit-row"><i class="fa fa-pencil"></i></a>
+												<a href="/donatur/delete/{{$rows->id_donatur}}" class="on-default remove-row"><i class="fa fa-trash-o"></i></a>
 											</th>
 										</tr>
 									@endforeach

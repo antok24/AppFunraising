@@ -32,31 +32,37 @@
 										<div class="form-group">
 											<label class="col-sm-3 control-label">Kode Barang <span class="required">*</span></label>
 											<div class="col-sm-9">
-												<input type="text" name="kode_barang" class="form-control" placeholder="Kode Barang" required/>
+												<input type="text" autocomplete="off" name="kode_barang" class="form-control" placeholder="Kode Barang" required/>
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-sm-3 control-label">Kategori Barang <span class="required">*</span></label>
+											<div class="col-sm-9">
+												<input type="text" autocomplete="off" name="kategori_barang" class="form-control" placeholder="Kategori Barang" required/>
 											</div>
 										</div>
 										<div class="form-group">
 											<label class="col-sm-3 control-label">Nama Barang <span class="required">*</span></label>
 											<div class="col-sm-9">
-												<input type="text" name="nama_barang" class="form-control" placeholder="Nama Barang" required/>
+												<input type="text" autocomplete="off" name="nama_barang" class="form-control" placeholder="Nama Barang" required/>
 											</div>
 										</div>
 										<div class="form-group">
 											<label class="col-sm-3 control-label">Merk <span class="required">*</span></label>
 											<div class="col-sm-9">
-												<input type="text" name="merk_barang" class="form-control" placeholder="Merk" required/>
+												<input type="text" autocomplete="off" name="merk_barang" class="form-control" placeholder="Merk" required/>
 											</div>
 										</div>
 										<div class="form-group">
 											<label class="col-sm-3 control-label">Jumlah <span class="required">*</span></label>
 											<div class="col-sm-9">
-												<input type="text" name="jumlah" class="form-control" placeholder="Jumlah" required/>
+												<input type="text" autocomplete="off" name="jumlah" class="form-control" placeholder="Jumlah" required/>
 											</div>
 										</div>
 										<div class="form-group">
 											<label class="col-sm-3 control-label">Nilai Perolehan<span class="required">*</span></label>
 											<div class="col-sm-9">
-												<input type="text" name="nilai_perolehan" class="form-control" placeholder="Nilai Perolehan" required/>
+												<input type="text" autocomplete="off" name="nilai_perolehan" class="form-control" placeholder="Nilai Perolehan" required/>
 											</div>
 										</div>
 											<div class="form-group">
@@ -66,7 +72,7 @@
 														<span class="input-group-addon">
 															<i class="fa fa-calendar"></i>
 														</span>
-														<input type="text" name="tahun_perolehan" data-plugin-datepicker class="form-control">
+														<input type="date" autocomplete="off" name="tahun_perolehan"  class="form-control">
 													</div>
 												</div>
 											</div>

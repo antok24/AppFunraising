@@ -33,13 +33,12 @@ class BarangController extends Controller
     {
         DB::table('t_barang')->insert([
             'kode_barang'     => $request->kode_barang,
+            'kategori_barang' => $request->kategori_barang,
             'nama_barang'     => $request->nama_barang,
             'merk_barang'     => $request->merk_barang,
             'jumlah'          => $request->jumlah,
             'nilai_perolehan' => $request->nilai_perolehan,
-            'tahun_perolehan' => $request->tahun_perolehan,
-            'user_updated'    => $request->user_updated,
-            'user_created'    => $request->user_created
+            'tahun_perolehan' => $request->tahun_perolehan
         ]);
         Alert::success('Success', 'Data Berhasil disimpan');
         return redirect()->route('inventaris.index');
@@ -60,13 +59,12 @@ class BarangController extends Controller
     public function update(Request $request)
     {
         DB::table('t_barang')->where ('kode_barang',$request->kode_barang)->update([
+            'kategori_barang' => $request->kategori_barang,
             'nama_barang'     => $request->nama_barang,
             'merk_barang'     => $request->merk_barang,
             'jumlah'          => $request->jumlah,
             'nilai_perolehan' => $request->nilai_perolehan,
-            'tahun_perolehan' => $request->tahun_perolehan,
-            'user_updated'    => $request->user_updated,
-            'user_created'    => $request->user_created 
+            'tahun_perolehan' => $request->tahun_perolehan
         ]);
         Alert::success('Success', 'Data Berhasil diupdate');
         return redirect()->route('inventaris.index');
