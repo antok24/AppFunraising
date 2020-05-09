@@ -33,6 +33,7 @@
 										<div class="form-group">
 											<label class="col-sm-3 control-label">Nama Donatur <span class="required">*</span></label>
 											<div class="col-sm-6">
+												<input type="hidden" name="id_donatur" value="{{ $rows->id_donatur }}"> <br/>
 												<input value="{{$rows->nama_donatur}}" type="text" name="nama_donatur" class="form-control" placeholder="eg.: John Doe" required/>
 											</div>
 										</div>
